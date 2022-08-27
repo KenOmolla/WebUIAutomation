@@ -15,17 +15,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+public class Tests extends BaseClass {
 
-
-
-public class Tests extends BaseClass
-{
-		
-	@Test(description="This TC will perform invalid login")
-	public void authenticationFailure() throws Throwable
-	{
+	@Test(description = "This TC will perform invalid login", priority =1)
+	public void authenticationFailure() throws Throwable {
 		driver.findElement(By.className("login")).click();
 
 		WebElement email = driver.findElement(By.id("email"));
@@ -37,17 +33,17 @@ public class Tests extends BaseClass
 		password.sendKeys("testautomation@123");
 
 		driver.findElement(By.id("SubmitLogin")).click();
-		
+
 		driver.navigate().back();
-		
+
 		Thread.sleep(3000);
 	}
-	
-	@Test(description="This logs in, sorts popular section and add items to cart")
-	public void successfulLogin() throws InterruptedException
-	{
-		driver.findElement(By.className("login")).click();
+
+	@Test(description = "This logs in, sorts popular section and add items to cart", priority =2)
+	public void successfulLogin() throws InterruptedException {
 		
+		driver.findElement(By.className("login")).click();
+
 		WebElement email = driver.findElement(By.id("email"));
 		email.clear();
 		email.sendKeys("testautomationmfs@gmail.com");
@@ -57,10 +53,18 @@ public class Tests extends BaseClass
 		password.sendKeys("TestAutomation@123");
 
 		driver.findElement(By.id("SubmitLogin")).click();
-		
+
 		Thread.sleep(3000);
 		
-		//Sorting Popular items
+		Reporter.log("=====Logged in Successfully with correct Credentials=====", true);
+
+	}
+
+	// Sorting Popular items
+	@Test(description = "This test sorts popular items", priority =3)
+	public void sortPopularItems() throws InterruptedException {
+		
+		Reporter.log("=====Accessing and Sorting out popular items=====", true);
 		
 		driver.findElement(By.xpath("//a[@title='Home']")).click();
 		driver.findElement(By.className("homefeatured")).click();
@@ -68,12 +72,11 @@ public class Tests extends BaseClass
 		List<WebElement> products = driver
 				.findElements(By.xpath("//ul[@id='homefeatured']//div[@class='right-block']"));
 
-		
 		String label;
 		String price;
 		double convertedPrice;
 		HashMap<String, Double> productList = new HashMap<String, Double>();
-		
+
 		int i = 0;
 		while (i < products.size()) {
 			label = ((List<WebElement>) driver.findElements(
@@ -83,7 +86,7 @@ public class Tests extends BaseClass
 			price = ((List<WebElement>) driver.findElements(By.xpath(
 					"//ul[@id='homefeatured']//div[@class='right-block']//parent::h5//following-sibling::div//span[@itemprop='price']")))
 					.get(i).getText().substring(1);
-			
+
 			System.out.println(label);
 			System.out.println(price);
 
@@ -94,28 +97,32 @@ public class Tests extends BaseClass
 			i++;
 
 		}
-		
-		//Sorts and prints products based on price 
+
+		// Sorts and prints products based on price
 		Map<String, Double> sortedProductList = productList.entrySet().stream().sorted(Entry.comparingByValue())
 				.collect(Collectors.toMap(Entry::getKey, Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
-		
+
 		for (Map.Entry entry : sortedProductList.entrySet()) {
 			System.out.println(entry.getKey() + ": " + entry.getValue());
 		}
-		
+
 		Thread.sleep(3000);
+
+	}
+
+	// Adding items to Cart
+
+	@Test(description = "This test add the items to cart", priority =4)
+	public void addingItemsToCart() throws InterruptedException {
+		Reporter.log("=====Began looking for dress to add to Cart=====", true);
 		
-		
-		//Adding items to Cart
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
-		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		Actions mouseHover = new Actions(driver);
 
 		WebElement Women = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@title='Women']")));
 		mouseHover.moveToElement(Women).perform();
 		WebElement eveningDresses = driver.findElement(By.xpath("//a[@title='Evening Dresses']"));
 		eveningDresses.click();
-		
 
 		driver.findElement(By.id("layered_id_attribute_group_2")).click();
 		Thread.sleep(3000);
@@ -170,10 +177,10 @@ public class Tests extends BaseClass
 		System.out.println("Total product cost is " + totalProduct);
 		System.out.println("Total Shipping cost is " + shippingCost);
 		System.out.println("This will cost you " + totalCost + " when you check out");
-		
-		double convertedTotalProduct =  Double.parseDouble(totalProduct.substring(1));
-		double convertedShippingCost =  Double.parseDouble(shippingCost.substring(1));
-		double convertedTotalCost =  Double.parseDouble(totalCost.substring(1));
+
+		double convertedTotalProduct = Double.parseDouble(totalProduct.substring(1));
+		double convertedShippingCost = Double.parseDouble(shippingCost.substring(1));
+		double convertedTotalCost = Double.parseDouble(totalCost.substring(1));
 		Assert.assertEquals(convertedTotalCost, convertedTotalProduct + convertedShippingCost);
 
 		// Split and print Color and Size
@@ -186,9 +193,9 @@ public class Tests extends BaseClass
 		String size = sizeAndColor[1];
 		Assert.assertEquals(size, "M");
 
-		System.out.println("Color of purchase is: "+ color);
-		System.out.println("Size of purchase is: "+ size);
-	
+		System.out.println("Color of purchase is: " + color);
+		System.out.println("Size of purchase is: " + size);
+
 	}
-	
+
 }
