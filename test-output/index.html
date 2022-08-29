@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\USER\AppData\Local\Temp\testng-eclipse--790486564\testng-customsuite.xml</span>
+                    <span>C:\Users\USER\AppData\Local\Temp\testng-eclipse--282089010\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="automationPractice.Tests" class="method navigator-link" hash-for-method="addingItemsToCart">addingItemsToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="automationPractice.Tests" class="method navigator-link" hash-for-method="authenticationFailure">authenticationFailure</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="automationPractice.Tests" class="method navigator-link" hash-for-method="sortPopularItems">sortPopularItems</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -132,6 +142,15 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="addingItemsToCart">
+                  </a> <!-- addingItemsToCart -->
+                  <span class="method-name">addingItemsToCart</span>
+                  <em>
+(This test add the items to cart)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="authenticationFailure">
                   </a> <!-- authenticationFailure -->
                   <span class="method-name">authenticationFailure</span>
@@ -141,11 +160,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="sortPopularItems">
+                  </a> <!-- sortPopularItems -->
+                  <span class="method-name">sortPopularItems</span>
+                  <em>
+(This test sorts popular items)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="successfulLogin">
                   </a> <!-- successfulLogin -->
                   <span class="method-name">successfulLogin</span>
                   <em>
-(This logs in, sorts popular section and add items to cart)                  </em>
+(This TC will perform successful login)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -153,7 +181,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\USER\AppData\Local\Temp\testng-eclipse--790486564\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\USER\AppData\Local\Temp\testng-eclipse--282089010\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -162,8 +190,6 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.Jangwa.JangwaTest.AppTest&quot;/&gt;
-      &lt;class name=&quot;automationPractice.BaseClass&quot;/&gt;
       &lt;class name=&quot;automationPractice.Tests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
@@ -178,7 +204,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (3 classes)</span>
+                <span class="test-name">Default test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -204,20 +230,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'successfulLogin')
+data.setCell(0, 1, 'addingItemsToCart')
 data.setCell(0, 2, 'automationPractice.Tests')
-data.setCell(0, 3, 64987);
+data.setCell(0, 3, 50011);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'authenticationFailure')
 data.setCell(1, 2, 'automationPractice.Tests')
-data.setCell(1, 3, 17228);
+data.setCell(1, 3, 33425);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'successfulLogin')
+data.setCell(2, 2, 'automationPractice.Tests')
+data.setCell(2, 3, 26479);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'sortPopularItems')
+data.setCell(3, 2, 'automationPractice.Tests')
+data.setCell(3, 3, 13265);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -228,6 +262,24 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">successfulLogin</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Logged in Successfully with correct Credentials=====</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">sortPopularItems</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Accessing and Sorting out popular items=====</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">addingItemsToCart</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">=====Began looking for dress to add to Cart=====</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -250,15 +302,23 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">authenticationFailure</span>
-                <span class="method-start">23925 ms</span>
+                <span class="method-start">27820 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">successfulLogin</span>
-                <span class="method-start">41158 ms</span>
+                <span class="method-start">61256 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">sortPopularItems</span>
+                <span class="method-start">87738 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addingItemsToCart</span>
+                <span class="method-start">101010 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeApplication</span>
-                <span class="method-start">106152 ms</span>
+                <span class="method-start">151024 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

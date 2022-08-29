@@ -18,6 +18,9 @@ import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
+import com.google.common.collect.ArrayListMultimap;
+import com.google.common.collect.Multimap;
+
 public class Tests extends BaseClass {
 
 	@Test(description = "This TC will perform invalid login", priority =1)
@@ -34,12 +37,10 @@ public class Tests extends BaseClass {
 
 		driver.findElement(By.id("SubmitLogin")).click();
 
-		driver.navigate().back();
-
 		Thread.sleep(3000);
 	}
 
-	@Test(description = "This logs in, sorts popular section and add items to cart", priority =2)
+	@Test(description = "This TC will perform successful login", priority =2)
 	public void successfulLogin() throws InterruptedException {
 		
 		driver.findElement(By.className("login")).click();
@@ -75,7 +76,8 @@ public class Tests extends BaseClass {
 		String label;
 		String price;
 		double convertedPrice;
-		HashMap<String, Double> productList = new HashMap<String, Double>();
+		HashMap<String, Double> productList = new HashMap<>();
+		//Multimap<String, Double> productList = ArrayListMultimap.create();
 
 		int i = 0;
 		while (i < products.size()) {
@@ -91,6 +93,11 @@ public class Tests extends BaseClass {
 			System.out.println(price);
 
 			convertedPrice = Double.parseDouble(price);
+			
+			//modifies the name of apparel if one already exists in the hashmap
+			if (productList.containsKey(label)) {
+				label += " 2"; 
+			}
 
 			productList.put(label, convertedPrice);
 

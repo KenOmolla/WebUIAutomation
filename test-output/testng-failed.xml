@@ -5,9 +5,8 @@
     <classes>
       <class name="automationPractice.Tests">
         <methods>
-          <include name="successfulLogin"/>
           <include name="setupApplication"/>
-          <include name="authenticationFailure"/>
+          <include name="addingItemsToCart"/>
           <include name="closeApplication"/>
         </methods>
       </class> <!-- automationPractice.Tests -->

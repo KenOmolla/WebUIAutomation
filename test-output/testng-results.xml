@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[=====Browser Session Started=====]]>
@@ -8,15 +8,24 @@
       <![CDATA[=====Application Started=====]]>
     </line>
     <line>
+      <![CDATA[=====Logged in Successfully with correct Credentials=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Accessing and Sorting out popular items=====]]>
+    </line>
+    <line>
+      <![CDATA[=====Began looking for dress to add to Cart=====]]>
+    </line>
+    <line>
       <![CDATA[=====Browser Session End=====]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-08-24T22:51:28 EAT" name="Default suite" finished-at="2022-08-24T22:53:15 EAT" duration-ms="106782">
+  <suite started-at="2022-08-29T20:53:48 EAT" name="Default suite" finished-at="2022-08-29T20:56:19 EAT" duration-ms="151399">
     <groups>
     </groups>
-    <test started-at="2022-08-24T22:51:28 EAT" name="Default test" finished-at="2022-08-24T22:53:15 EAT" duration-ms="106782">
+    <test started-at="2022-08-29T20:53:48 EAT" name="Default test" finished-at="2022-08-29T20:56:19 EAT" duration-ms="151399">
       <class name="automationPractice.Tests">
-        <test-method is-config="true" signature="setupApplication()[pri:0, instance:automationPractice.Tests@f5ac9e4]" started-at="2022-08-24T22:51:28 EAT" name="setupApplication" finished-at="2022-08-24T22:51:52 EAT" duration-ms="23858" status="PASS">
+        <test-method is-config="true" signature="setupApplication()[pri:0, instance:automationPractice.Tests@393671df]" started-at="2022-08-29T20:53:48 EAT" name="setupApplication" finished-at="2022-08-29T20:54:16 EAT" duration-ms="27803" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session Started=====]]>
@@ -26,15 +35,32 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="authenticationFailure()[pri:0, instance:automationPractice.Tests@f5ac9e4]" started-at="2022-08-24T22:51:52 EAT" name="authenticationFailure" description="This TC will perform invalid login" finished-at="2022-08-24T22:52:09 EAT" duration-ms="17228" status="PASS">
+        <test-method signature="authenticationFailure()[pri:1, instance:automationPractice.Tests@393671df]" started-at="2022-08-29T20:54:16 EAT" name="authenticationFailure" description="This TC will perform invalid login" finished-at="2022-08-29T20:54:49 EAT" duration-ms="33425" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authenticationFailure -->
-        <test-method signature="successfulLogin()[pri:0, instance:automationPractice.Tests@f5ac9e4]" started-at="2022-08-24T22:52:09 EAT" name="successfulLogin" description="This logs in, sorts popular section and add items to cart" finished-at="2022-08-24T22:53:14 EAT" duration-ms="64987" status="PASS">
+        <test-method signature="successfulLogin()[pri:2, instance:automationPractice.Tests@393671df]" started-at="2022-08-29T20:54:49 EAT" name="successfulLogin" description="This TC will perform successful login" finished-at="2022-08-29T20:55:16 EAT" duration-ms="26479" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[=====Logged in Successfully with correct Credentials=====]]>
+            </line>
           </reporter-output>
         </test-method> <!-- successfulLogin -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:automationPractice.Tests@f5ac9e4]" started-at="2022-08-24T22:53:14 EAT" name="closeApplication" finished-at="2022-08-24T22:53:15 EAT" duration-ms="475" status="PASS">
+        <test-method signature="sortPopularItems()[pri:3, instance:automationPractice.Tests@393671df]" started-at="2022-08-29T20:55:16 EAT" name="sortPopularItems" description="This test sorts popular items" finished-at="2022-08-29T20:55:29 EAT" duration-ms="13265" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Accessing and Sorting out popular items=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- sortPopularItems -->
+        <test-method signature="addingItemsToCart()[pri:4, instance:automationPractice.Tests@393671df]" started-at="2022-08-29T20:55:29 EAT" name="addingItemsToCart" description="This test add the items to cart" finished-at="2022-08-29T20:56:19 EAT" duration-ms="50011" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=====Began looking for dress to add to Cart=====]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- addingItemsToCart -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:automationPractice.Tests@393671df]" started-at="2022-08-29T20:56:19 EAT" name="closeApplication" finished-at="2022-08-29T20:56:19 EAT" duration-ms="338" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
