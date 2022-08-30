@@ -36,6 +36,9 @@ public class Tests extends BaseClass {
 		password.sendKeys("testautomation@123");
 
 		driver.findElement(By.id("SubmitLogin")).click();
+		
+		String authFailureNotifcation = driver.findElement(By.xpath("//div[@id='center_column']//li")).getText();
+		Assert.assertEquals(authFailureNotifcation, "Authentication failed.");
 
 		Thread.sleep(3000);
 	}
@@ -75,6 +78,7 @@ public class Tests extends BaseClass {
 
 		String label;
 		String price;
+		
 		double convertedPrice;
 		HashMap<String, Double> productList = new HashMap<>();
 		//Multimap<String, Double> productList = ArrayListMultimap.create();

@@ -5,7 +5,10 @@
     <classes>
       <class name="automationPractice.Tests">
         <methods>
+          <include name="successfulLogin"/>
+          <include name="sortPopularItems"/>
           <include name="setupApplication"/>
+          <include name="authenticationFailure"/>
           <include name="addingItemsToCart"/>
           <include name="closeApplication"/>
         </methods>
