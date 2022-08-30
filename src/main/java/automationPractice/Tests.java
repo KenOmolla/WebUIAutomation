@@ -9,6 +9,7 @@ import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -23,7 +24,14 @@ import com.google.common.collect.Multimap;
 
 public class Tests extends BaseClass {
 
-	@Test(description = "This TC will perform invalid login", priority =1)
+	static double currentSlider1Postion;
+	static double currentSlider2Postion;
+	static double targetPosition1 = 50.00;
+	static double targetPosition2 = 52.28;
+	static double eachMove = 0.03;
+	static int requiredMoves;
+
+	@Test(description = "This TC will perform invalid login", priority = 1)
 	public void authenticationFailure() throws Throwable {
 		driver.findElement(By.className("login")).click();
 
@@ -36,16 +44,16 @@ public class Tests extends BaseClass {
 		password.sendKeys("testautomation@123");
 
 		driver.findElement(By.id("SubmitLogin")).click();
-		
+
 		String authFailureNotifcation = driver.findElement(By.xpath("//div[@id='center_column']//li")).getText();
 		Assert.assertEquals(authFailureNotifcation, "Authentication failed.");
 
 		Thread.sleep(3000);
 	}
 
-	@Test(description = "This TC will perform successful login", priority =2)
+	@Test(description = "This TC will perform successful login", priority = 2)
 	public void successfulLogin() throws InterruptedException {
-		
+
 		driver.findElement(By.className("login")).click();
 
 		WebElement email = driver.findElement(By.id("email"));
@@ -59,17 +67,17 @@ public class Tests extends BaseClass {
 		driver.findElement(By.id("SubmitLogin")).click();
 
 		Thread.sleep(3000);
-		
+
 		Reporter.log("=====Logged in Successfully with correct Credentials=====", true);
 
 	}
 
 	// Sorting Popular items
-	@Test(description = "This test sorts popular items", priority =3)
+	@Test(description = "This test sorts popular items", priority = 3)
 	public void sortPopularItems() throws InterruptedException {
-		
+
 		Reporter.log("=====Accessing and Sorting out popular items=====", true);
-		
+
 		driver.findElement(By.xpath("//a[@title='Home']")).click();
 		driver.findElement(By.className("homefeatured")).click();
 
@@ -78,10 +86,10 @@ public class Tests extends BaseClass {
 
 		String label;
 		String price;
-		
+
 		double convertedPrice;
 		HashMap<String, Double> productList = new HashMap<>();
-		//Multimap<String, Double> productList = ArrayListMultimap.create();
+		// Multimap<String, Double> productList = ArrayListMultimap.create();
 
 		int i = 0;
 		while (i < products.size()) {
@@ -97,10 +105,10 @@ public class Tests extends BaseClass {
 			System.out.println(price);
 
 			convertedPrice = Double.parseDouble(price);
-			
-			//modifies the name of apparel if one already exists in the hashmap
+
+			// modifies the name of apparel if one already exists in the hashmap
 			if (productList.containsKey(label)) {
-				label += " 2"; 
+				label += " 2";
 			}
 
 			productList.put(label, convertedPrice);
@@ -123,13 +131,12 @@ public class Tests extends BaseClass {
 
 	// Adding items to Cart
 
-	@Test(description = "This test add the items to cart", priority =4)
+	@Test(description = "This test add the items to cart", priority = 4)
 	public void addingItemsToCart() throws InterruptedException {
 		Reporter.log("=====Began looking for dress to add to Cart=====", true);
-		
+
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		Actions mouseHover = new Actions(driver);
-
 		WebElement Women = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@title='Women']")));
 		mouseHover.moveToElement(Women).perform();
 		WebElement eveningDresses = driver.findElement(By.xpath("//a[@title='Evening Dresses']"));
@@ -140,16 +147,10 @@ public class Tests extends BaseClass {
 		driver.findElement(By.id("layered_id_attribute_group_24")).click();
 		Thread.sleep(3000);
 
-		WebElement slider = driver.findElement(By.xpath("//div[@id='layered_price_slider']/a[2]"));
-
-		double currentPosition = 53.00;
-		double desiredPosition = 52.28;
-		double difference = currentPosition - desiredPosition;
-		double eachMove = 0.03;
-		int requiredMoves = (int) Math.round(difference / eachMove);
-
-		mouseHover.moveToElement(slider, Math.negateExact(requiredMoves), 0).click();
-		mouseHover.build().perform();
+		currentSliderPosition();
+		moveSlider1();
+		moveSlider2();
+		Assert.assertEquals(driver.findElement(By.id("layered_price_range")).getText(), "$50.00 - $52.28");
 
 		WebElement foundEntry = driver.findElement(By.xpath("//div[@class='product-container']"));
 		WebElement more = driver.findElement(By.cssSelector("a.button.lnk_view.btn.btn-default > span"));
@@ -207,6 +208,42 @@ public class Tests extends BaseClass {
 		System.out.println("Color of purchase is: " + color);
 		System.out.println("Size of purchase is: " + size);
 
+	}
+
+	public static void currentSliderPosition() {
+		String range = driver.findElement(By.id("layered_price_range")).getText();
+
+		String[] currentRange = range.split("\\s+");
+		currentSlider1Postion = Double.parseDouble(currentRange[0].substring(1));
+		currentSlider2Postion = Double.parseDouble(currentRange[2].substring(1));
+	}
+
+	public static void moveSlider1() {
+
+		requiredMoves = (int) Math.round((targetPosition1 - currentSlider1Postion) / eachMove);
+		WebElement slider1 = driver.findElement(By.xpath("//div[@id='layered_price_slider']/a[1]"));
+
+		if (requiredMoves > 0) {
+			for (int i = 1; i <= requiredMoves; i++) {
+				slider1.sendKeys(Keys.ARROW_RIGHT);
+			}
+		}
+
+	}
+
+	public static void moveSlider2() {
+		
+		requiredMoves = (int) Math.round((currentSlider2Postion - targetPosition2) / eachMove);
+		System.out.println(requiredMoves);
+
+		WebElement slider2 = driver.findElement(By.xpath("//div[@id='layered_price_slider']/a[2]"));
+
+		if (requiredMoves > 0) {
+			for (int i = 1; i <= requiredMoves; i++) {
+				slider2.sendKeys(Keys.ARROW_LEFT);
+			}
+		}
+		
 	}
 
 }

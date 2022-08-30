@@ -1,62 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="16" passed="10" failed="6" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[=====Browser Session Started=====]]>
     </line>
     <line>
-      <![CDATA[=====Browser Session Started=====]]>
-    </line>
-    <line>
       <![CDATA[=====Application Started=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Application Started=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Logged in Successfully with correct Credentials=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Accessing and Sorting out popular items=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Logged in Successfully with correct Credentials=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Accessing and Sorting out popular items=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Began looking for dress to add to Cart=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session End=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session Started=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Began looking for dress to add to Cart=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Application Started=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Accessing and Sorting out popular items=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Began looking for dress to add to Cart=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session End=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session Started=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Application Started=====]]>
-    </line>
-    <line>
-      <![CDATA[=====Browser Session End=====]]>
     </line>
     <line>
       <![CDATA[=====Logged in Successfully with correct Credentials=====]]>
@@ -71,122 +20,12 @@
       <![CDATA[=====Browser Session End=====]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-08-30T09:34:55 EAT" name="TestSuite" finished-at="2022-08-30T09:37:29 EAT" duration-ms="154602">
+  <suite started-at="2022-08-31T00:04:23 EAT" name="TestSuite" finished-at="2022-08-31T00:06:13 EAT" duration-ms="109482">
     <groups>
     </groups>
-    <test started-at="2022-08-30T09:34:55 EAT" name="FirefoxTest" finished-at="2022-08-30T09:35:48 EAT" duration-ms="52784">
+    <test started-at="2022-08-31T00:04:23 EAT" name="EdgeTest" finished-at="2022-08-31T00:06:13 EAT" duration-ms="109482">
       <class name="automationPractice.Tests">
-        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:automationPractice.Tests@5b239d7d]" started-at="2022-08-30T09:34:55 EAT" name="setupApplication" finished-at="2022-08-30T09:35:14 EAT" duration-ms="19128" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session Started=====]]>
-            </line>
-            <line>
-              <![CDATA[=====Application Started=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="authenticationFailure()[pri:1, instance:automationPractice.Tests@5b239d7d]" started-at="2022-08-30T09:35:14 EAT" name="authenticationFailure" description="This TC will perform invalid login" finished-at="2022-08-30T09:35:26 EAT" duration-ms="12275" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- authenticationFailure -->
-        <test-method signature="successfulLogin()[pri:2, instance:automationPractice.Tests@5b239d7d]" started-at="2022-08-30T09:35:26 EAT" name="successfulLogin" description="This TC will perform successful login" finished-at="2022-08-30T09:35:39 EAT" duration-ms="12704" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Logged in Successfully with correct Credentials=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- successfulLogin -->
-        <test-method signature="sortPopularItems()[pri:3, instance:automationPractice.Tests@5b239d7d]" started-at="2022-08-30T09:35:39 EAT" name="sortPopularItems" description="This test sorts popular items" finished-at="2022-08-30T09:35:46 EAT" duration-ms="6778" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Accessing and Sorting out popular items=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- sortPopularItems -->
-        <test-method signature="addingItemsToCart()[pri:4, instance:automationPractice.Tests@5b239d7d]" started-at="2022-08-30T09:35:46 EAT" name="addingItemsToCart" description="This test add the items to cart" finished-at="2022-08-30T09:35:46 EAT" duration-ms="274" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[Element <a href="http://automationpractice.com/index.php?id_category=10&controller=category"> could not be scrolled into view
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [be3a7c55-2828-494b-84c0-43419e5f58d0, clickElement {id=2a897648-3106-4569-a923-f815c1130460}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0, moz:accessibilityChecks: false, moz:buildID: 20220818191623, moz:debuggerAddress: localhost:55941, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10096, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55941/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (be3a7c55-2828-494b-84c0-43419e5f58d0)] -> xpath: //a[@title='Evening Dresses']]
-Session ID: be3a7c55-2828-494b-84c0-43419e5f58d0]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <a href="http://automationpractice.com/index.php?id_category=10&controller=category"> could not be scrolled into view
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [be3a7c55-2828-494b-84c0-43419e5f58d0, clickElement {id=2a897648-3106-4569-a923-f815c1130460}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0, moz:accessibilityChecks: false, moz:buildID: 20220818191623, moz:debuggerAddress: localhost:55941, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 10096, moz:profile: C:\Users\USER\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55941/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (be3a7c55-2828-494b-84c0-43419e5f58d0)] -> xpath: //a[@title='Evening Dresses']]
-Session ID: be3a7c55-2828-494b-84c0-43419e5f58d0
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at automationPractice.Tests.addingItemsToCart(Tests.java:136)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
-          <reporter-output>
-            <line>
-              <![CDATA[=====Began looking for dress to add to Cart=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addingItemsToCart -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:automationPractice.Tests@5b239d7d]" started-at="2022-08-30T09:35:46 EAT" name="closeApplication" finished-at="2022-08-30T09:35:48 EAT" duration-ms="1561" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session End=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- automationPractice.Tests -->
-    </test> <!-- FirefoxTest -->
-    <test started-at="2022-08-30T09:35:48 EAT" name="EdgeTest" finished-at="2022-08-30T09:36:24 EAT" duration-ms="36063">
-      <class name="automationPractice.Tests">
-        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:automationPractice.Tests@52bf72b5]" started-at="2022-08-30T09:35:48 EAT" name="setupApplication" finished-at="2022-08-30T09:36:12 EAT" duration-ms="24397" status="PASS">
+        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:automationPractice.Tests@1ab3a8c8]" started-at="2022-08-31T00:04:23 EAT" name="setupApplication" finished-at="2022-08-31T00:04:40 EAT" duration-ms="16634" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -203,255 +42,32 @@ at java.base/java.lang.Thread.run(Thread.java:833)
             </line>
           </reporter-output>
         </test-method> <!-- setupApplication -->
-        <test-method signature="authenticationFailure()[pri:1, instance:automationPractice.Tests@52bf72b5]" started-at="2022-08-30T09:36:12 EAT" name="authenticationFailure" description="This TC will perform invalid login" finished-at="2022-08-30T09:36:13 EAT" duration-ms="781" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
-  (Session info: MicrosoftEdge=104.0.1293.70)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6d5e75d602d5c8250d5e739f1207690b, findElement {using=id, value=email}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, ms:edgeOptions: {debuggerAddress: localhost:53169}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53169/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d5e75d602d5c8250d5e739f1207690b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#email"}
-  (Session info: MicrosoftEdge=104.0.1293.70)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6d5e75d602d5c8250d5e739f1207690b, findElement {using=id, value=email}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, ms:edgeOptions: {debuggerAddress: localhost:53169}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53169/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d5e75d602d5c8250d5e739f1207690b
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at automationPractice.Tests.authenticationFailure(Tests.java:30)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="authenticationFailure()[pri:1, instance:automationPractice.Tests@1ab3a8c8]" started-at="2022-08-31T00:04:40 EAT" name="authenticationFailure" description="This TC will perform invalid login" finished-at="2022-08-31T00:04:53 EAT" duration-ms="13111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- authenticationFailure -->
-        <test-method signature="successfulLogin()[pri:2, instance:automationPractice.Tests@52bf72b5]" started-at="2022-08-30T09:36:13 EAT" name="successfulLogin" description="This TC will perform successful login" finished-at="2022-08-30T09:36:13 EAT" duration-ms="23" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".login"}
-  (Session info: MicrosoftEdge=104.0.1293.70)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6d5e75d602d5c8250d5e739f1207690b, findElement {using=class name, value=login}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, ms:edgeOptions: {debuggerAddress: localhost:53169}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53169/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d5e75d602d5c8250d5e739f1207690b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".login"}
-  (Session info: MicrosoftEdge=104.0.1293.70)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6d5e75d602d5c8250d5e739f1207690b, findElement {using=class name, value=login}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, ms:edgeOptions: {debuggerAddress: localhost:53169}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53169/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d5e75d602d5c8250d5e739f1207690b
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at automationPractice.Tests.successfulLogin(Tests.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="successfulLogin()[pri:2, instance:automationPractice.Tests@1ab3a8c8]" started-at="2022-08-31T00:04:53 EAT" name="successfulLogin" description="This TC will perform successful login" finished-at="2022-08-31T00:05:06 EAT" duration-ms="12694" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[=====Logged in Successfully with correct Credentials=====]]>
+            </line>
           </reporter-output>
         </test-method> <!-- successfulLogin -->
-        <test-method signature="sortPopularItems()[pri:3, instance:automationPractice.Tests@52bf72b5]" started-at="2022-08-30T09:36:13 EAT" name="sortPopularItems" description="This test sorts popular items" finished-at="2022-08-30T09:36:13 EAT" duration-ms="21" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Home']"}
-  (Session info: MicrosoftEdge=104.0.1293.70)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6d5e75d602d5c8250d5e739f1207690b, findElement {using=xpath, value=//a[@title='Home']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, ms:edgeOptions: {debuggerAddress: localhost:53169}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53169/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d5e75d602d5c8250d5e739f1207690b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@title='Home']"}
-  (Session info: MicrosoftEdge=104.0.1293.70)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [6d5e75d602d5c8250d5e739f1207690b, findElement {using=xpath, value=//a[@title='Home']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, ms:edgeOptions: {debuggerAddress: localhost:53169}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53169/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d5e75d602d5c8250d5e739f1207690b
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at automationPractice.Tests.sortPopularItems(Tests.java:73)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="sortPopularItems()[pri:3, instance:automationPractice.Tests@1ab3a8c8]" started-at="2022-08-31T00:05:06 EAT" name="sortPopularItems" description="This test sorts popular items" finished-at="2022-08-31T00:05:14 EAT" duration-ms="8776" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Accessing and Sorting out popular items=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- sortPopularItems -->
-        <test-method signature="addingItemsToCart()[pri:4, instance:automationPractice.Tests@52bf72b5]" started-at="2022-08-30T09:36:13 EAT" name="addingItemsToCart" description="This test add the items to cart" finished-at="2022-08-30T09:36:23 EAT" duration-ms="10277" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //a[@title='Women'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, ms:edgeOptions: {debuggerAddress: localhost:53169}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53169/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d5e75d602d5c8250d5e739f1207690b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@title='Women'] (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 104.0.1293.70, ms:edgeOptions: {debuggerAddress: localhost:53169}, msedge: {msedgedriverVersion: 104.0.1293.70 (6709c341bd06..., userDataDir: C:\Users\USER\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53169/devtoo..., se:cdpVersion: 104.0.1293.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6d5e75d602d5c8250d5e739f1207690b
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at automationPractice.Tests.addingItemsToCart(Tests.java:133)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="addingItemsToCart()[pri:4, instance:automationPractice.Tests@1ab3a8c8]" started-at="2022-08-31T00:05:14 EAT" name="addingItemsToCart" description="This test add the items to cart" finished-at="2022-08-31T00:06:12 EAT" duration-ms="57478" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Began looking for dress to add to Cart=====]]>
             </line>
           </reporter-output>
         </test-method> <!-- addingItemsToCart -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:automationPractice.Tests@52bf72b5]" started-at="2022-08-30T09:36:23 EAT" name="closeApplication" finished-at="2022-08-30T09:36:24 EAT" duration-ms="545" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:automationPractice.Tests@1ab3a8c8]" started-at="2022-08-31T00:06:12 EAT" name="closeApplication" finished-at="2022-08-31T00:06:13 EAT" duration-ms="689" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[=====Browser Session End=====]]>
@@ -460,163 +76,5 @@ at java.base/java.lang.Thread.run(Thread.java:833)
         </test-method> <!-- closeApplication -->
       </class> <!-- automationPractice.Tests -->
     </test> <!-- EdgeTest -->
-    <test started-at="2022-08-30T09:34:55 EAT" name="ChromeTest" finished-at="2022-08-30T09:36:56 EAT" duration-ms="121211">
-      <class name="automationPractice.Tests">
-        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:automationPractice.Tests@72057ecf]" started-at="2022-08-30T09:34:55 EAT" name="setupApplication" finished-at="2022-08-30T09:35:14 EAT" duration-ms="18716" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session Started=====]]>
-            </line>
-            <line>
-              <![CDATA[=====Application Started=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="authenticationFailure()[pri:1, instance:automationPractice.Tests@72057ecf]" started-at="2022-08-30T09:35:14 EAT" name="authenticationFailure" description="This TC will perform invalid login" finished-at="2022-08-30T09:35:27 EAT" duration-ms="13569" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- authenticationFailure -->
-        <test-method signature="successfulLogin()[pri:2, instance:automationPractice.Tests@72057ecf]" started-at="2022-08-30T09:35:27 EAT" name="successfulLogin" description="This TC will perform successful login" finished-at="2022-08-30T09:35:40 EAT" duration-ms="12886" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Logged in Successfully with correct Credentials=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- successfulLogin -->
-        <test-method signature="sortPopularItems()[pri:3, instance:automationPractice.Tests@72057ecf]" started-at="2022-08-30T09:35:40 EAT" name="sortPopularItems" description="This test sorts popular items" finished-at="2022-08-30T09:35:50 EAT" duration-ms="9593" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Accessing and Sorting out popular items=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- sortPopularItems -->
-        <test-method signature="addingItemsToCart()[pri:4, instance:automationPractice.Tests@72057ecf]" started-at="2022-08-30T09:35:50 EAT" name="addingItemsToCart" description="This test add the items to cart" finished-at="2022-08-30T09:36:55 EAT" duration-ms="65801" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Began looking for dress to add to Cart=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addingItemsToCart -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:automationPractice.Tests@72057ecf]" started-at="2022-08-30T09:36:55 EAT" name="closeApplication" finished-at="2022-08-30T09:36:56 EAT" duration-ms="561" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session End=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- automationPractice.Tests -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2022-08-30T09:36:24 EAT" name="OperaTest" finished-at="2022-08-30T09:37:29 EAT" duration-ms="65644">
-      <class name="automationPractice.Tests">
-        <test-method is-config="true" signature="setupApplication(java.lang.String)[pri:0, instance:automationPractice.Tests@6c64cb25]" started-at="2022-08-30T09:36:24 EAT" name="setupApplication" finished-at="2022-08-30T09:36:43 EAT" duration-ms="19680" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Operamini]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session Started=====]]>
-            </line>
-            <line>
-              <![CDATA[=====Application Started=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setupApplication -->
-        <test-method signature="authenticationFailure()[pri:1, instance:automationPractice.Tests@6c64cb25]" started-at="2022-08-30T09:36:43 EAT" name="authenticationFailure" description="This TC will perform invalid login" finished-at="2022-08-30T09:36:55 EAT" duration-ms="11101" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- authenticationFailure -->
-        <test-method signature="successfulLogin()[pri:2, instance:automationPractice.Tests@6c64cb25]" started-at="2022-08-30T09:36:55 EAT" name="successfulLogin" description="This TC will perform successful login" finished-at="2022-08-30T09:37:18 EAT" duration-ms="23210" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Logged in Successfully with correct Credentials=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- successfulLogin -->
-        <test-method signature="sortPopularItems()[pri:3, instance:automationPractice.Tests@6c64cb25]" started-at="2022-08-30T09:37:18 EAT" name="sortPopularItems" description="This test sorts popular items" finished-at="2022-08-30T09:37:29 EAT" duration-ms="11076" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Accessing and Sorting out popular items=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- sortPopularItems -->
-        <test-method signature="addingItemsToCart()[pri:4, instance:automationPractice.Tests@6c64cb25]" started-at="2022-08-30T09:37:29 EAT" name="addingItemsToCart" description="This test add the items to cart" finished-at="2022-08-30T09:37:29 EAT" duration-ms="45" status="FAIL">
-          <exception class="org.openqa.selenium.UnsupportedCommandException">
-            <message>
-              <![CDATA[actions
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.opera.OperaDriver
-Command: [f54514783b54da9d39004d6f6289d8a8, actions {actions=[org.openqa.selenium.interactions.Sequence@5cb68b48]}]
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, browserConnectionEnabled: false, browserName: opera, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53248}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, opera: {operadriverVersion: 104.0.5112.81 (5b7b76419d50..., userDataDir: C:\Users\USER\AppData\Local...}, pageLoadStrategy: normal, platform: Windows, platformName: ANY, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 104.0.5112.102, webStorageEnabled: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f54514783b54da9d39004d6f6289d8a8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnsupportedCommandException: actions
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-TFMBSNA', ip: '172.18.176.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
-Driver info: org.openqa.selenium.opera.OperaDriver
-Command: [f54514783b54da9d39004d6f6289d8a8, actions {actions=[org.openqa.selenium.interactions.Sequence@5cb68b48]}]
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, browserConnectionEnabled: false, browserName: opera, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:53248}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, opera: {operadriverVersion: 104.0.5112.81 (5b7b76419d50..., userDataDir: C:\Users\USER\AppData\Local...}, pageLoadStrategy: normal, platform: Windows, platformName: ANY, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 104.0.5112.102, webStorageEnabled: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f54514783b54da9d39004d6f6289d8a8
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:250)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:127)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:637)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
-at automationPractice.Tests.addingItemsToCart(Tests.java:134)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnsupportedCommandException -->
-          <reporter-output>
-            <line>
-              <![CDATA[=====Began looking for dress to add to Cart=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addingItemsToCart -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:automationPractice.Tests@6c64cb25]" started-at="2022-08-30T09:37:29 EAT" name="closeApplication" finished-at="2022-08-30T09:37:29 EAT" duration-ms="499" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[=====Browser Session End=====]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- automationPractice.Tests -->
-    </test> <!-- OperaTest -->
   </suite> <!-- TestSuite -->
 </testng-results>

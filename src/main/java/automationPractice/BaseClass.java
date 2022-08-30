@@ -13,7 +13,7 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 
-	WebDriver driver;
+	static WebDriver driver;
 
 	@Parameters("browser")
 	@BeforeClass
