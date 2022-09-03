@@ -3,16 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automationPractice.Tests">
+      <class name="tests.Tests">
         <methods>
-          <include name="successfulLogin"/>
-          <include name="sortPopularItems"/>
-          <include name="setupApplication"/>
-          <include name="authenticationFailure"/>
-          <include name="addingItemsToCart"/>
-          <include name="closeApplication"/>
+          <include name="setDressAttributes"/>
+          <include name="addItemToCart"/>
+          <include name="confirmPurchaseDetails"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- automationPractice.Tests -->
+      </class> <!-- tests.Tests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
