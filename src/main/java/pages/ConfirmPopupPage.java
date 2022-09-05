@@ -51,8 +51,8 @@ public class ConfirmPopupPage {
     	sTotalCost = totalProduct.getText();
     	sShippingCost = shippingCost.getText();
     	sTotalCost = totalCost.getText();
-
-    	System.out.println("You have " + sQuantity + " in your cart");
+    	
+    	System.out.println("You have " + sQuantity + " items in your cart");
 		Assert.assertEquals(sQuantity, "3");
 		System.out.println("Total product cost is " + sTotalProduct);
 		System.out.println("Total Shipping cost is " + sShippingCost);

@@ -1,4 +1,4 @@
-package tests;
+package testngTests;
 
 import java.util.concurrent.TimeUnit;
 
@@ -17,28 +17,12 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.PopularPage;
 
-public class Tests {
-	WebDriver driver;
+public class Tests extends BaseClass {
 	LoginPage objectLogin;
 	HomePage objectHome;
 	PopularPage objectPopular;
 	EveningDresses objectDresses;
 	ConfirmPopupPage objectPopup;
-	
-	@BeforeClass
-	public void setup() {
-
-		System.setProperty("webdriver.edge.driver", "D:\\Software\\EdgeDriver\\V104\\msedgedriver.exe");
-
-		driver = new EdgeDriver();
-		
-		driver.manage().window().maximize();
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-		driver.get("http://automationpractice.com/index.php");
-
-	}
 
 	@Test(description = "This TC will perform login with invalid password", priority = 1)
 	public void authenticationFailure() throws Throwable {
@@ -89,7 +73,7 @@ public class Tests {
 	public void addItemToCart() throws Throwable {
 		objectDresses = new EveningDresses(driver);
 		objectDresses.addToCart();
-		
+		Thread.sleep(3000);
 	}
 	
 	@Test(description = "This TC check that the item details on the popup are accurate", dependsOnMethods = { "addItemToCart" })
